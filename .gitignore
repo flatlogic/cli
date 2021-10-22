@@ -1,0 +1,9 @@
+# Idea files
+.idea
+*.iml
+
+# Build folder
+dist
+
+# Node js dependencies
+node_modules

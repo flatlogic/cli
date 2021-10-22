@@ -238,6 +238,17 @@ async function interactiveMode(): Promise<ApplicationProps> {
     };
 }
 
+async function pathExists(path: string) {
+    try {
+        const stat = await fs.stat(path);
+        if (stat.isDirectory() || stat.isFile()) {
+            return true;
+        }
+    } catch (e) {
+        return false;
+    }
+}
+
 export default createCommand('generate')
     .argument('name', 'Project name')
     .option('--frontend <frontend>', 'Frontend framework')
@@ -246,6 +257,11 @@ export default createCommand('generate')
     .option('--design <design>', 'Application design')
     .action(async (name, options) => {
         const projectPath = path.join(process.cwd(), name);
+        if (await pathExists(projectPath)) {
+            console.error(chalk.red(`error: folder ${projectPath} already exists`));
+            process.exit(1);
+        }
+
         const hasArguments = Object.keys(options).length !== 0;
 
         const props = hasArguments ? cliMode(options) : await interactiveMode();

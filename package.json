@@ -1,5 +1,5 @@
 {
-  "name": "flatlogic-cli",
+  "name": "@flatlogic/cli",
   "version": "1.0.0",
   "description": "",
   "repository": {
@@ -13,7 +13,6 @@
     "build": "tsc",
     "dev": "ts-node src/index.ts"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/inquirer": "^8.1.3",

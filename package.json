@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "bin": {
-    "cli": "dist/index.js"
+    "flatlogic": "dist/index.js"
   },
   "scripts": {
     "build": "tsc",

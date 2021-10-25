@@ -2,7 +2,10 @@
   "name": "@flatlogic/cli",
   "version": "1.0.0",
   "private": false,
-  "description": "",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Flatlogic CLI App Generator",
   "repository": {
     "type": "git",
     "url": "https://github.com/flatlogic/cli.git"

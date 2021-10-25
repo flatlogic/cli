@@ -1,6 +1,7 @@
 {
   "name": "@flatlogic/cli",
   "version": "1.0.0",
+  "private": false,
   "description": "",
   "repository": {
     "type": "git",

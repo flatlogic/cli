@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/flatlogic/cli.git"
   },
-  "files": ["dist/**"],
+  "files": ["dist"],
   "bin": {
     "flatlogic": "dist/index.js"
   },

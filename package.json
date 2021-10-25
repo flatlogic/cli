@@ -1,6 +1,6 @@
 {
   "name": "@flatlogic/cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -10,7 +10,9 @@
     "type": "git",
     "url": "https://github.com/flatlogic/cli.git"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "bin": {
     "flatlogic": "dist/index.js"
   },
